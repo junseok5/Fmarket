@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fmarket</title>
+    <link rel="shortcut icon" type="image⁄x-icon" href="./img/title-logo.png">
+    <link rel= "stylesheet" type= "text/css" href= "./css/home.css" />
+    <link rel= "stylesheet" type= "text/css" href= "./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- facebook sdk -->
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.9&appId=1918640808399725";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- end -->
+      <div class= "wrapper">
+        <!-- 헤더 시작 -->
+        <% include ./include/header(login).ejs %>
+
+          <div class= "content2">
+            <!--
+            페이스북으로부터 불러 온 사용자 정보를 보여주고,
+            판매자가 아닌 경우 판매자 신청을 할 수 있는 버튼이 있고
+            판매자인 경우 게시글을 업로드 할 수 있는 UI를 띄운다.
+            -->
+          </div>
+            <div class= "userInfo">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h4>
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>내 정보
+                      <button type="button" class="btn btn-default" aria-label="Left Align" onclick="logout()">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                      </button><br />
+                    </h4>
+                  </div>
+                  <div class="panel-body">
+                    <h4>
+                      <a href="<%= profileUrl %>" target="_blank">
+                        <img src="<%= photos %>" draggable="false" />
+                        <%= displayName %>
+                      </a>
+                    </h4>
+                    <%
+                      if (seller) {
+                    %>
+                      <div id="sellerInfo" class="list-group">
+                        <a href="#" class="list-group-item disabled">
+                          <h4><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>판매자</h4>
+                        </a>
+                        <a href="javascript:void(0)" class="list-group-item">회사 이름: <span class="span-ui1"><%= company %></span></a>
+                        <a href="javascript:void(0)" class="list-group-item">회사 사이트: <span class="span-ui1"><%= companySite %></span></a>
+                        <a href="javascript:void(0)" class="list-group-item">페이스북 페이지: <span class="span-ui1"><%= facebookSite %></span></a>
+                        <a href="javascript:void(0)" class="list-group-item">담당자 연락처: <span class="span-ui1"><%= managerPhoneNum %></span></a>
+                      </div>
+                    <%
+                      }
+                    %>
+                  </div>
+                </div>
+            <%
+              if (seller) {
+            %>
+                <% include ./include/uploadPost.ejs %>
+            <%
+              } else {
+            %>
+              <br />
+              <input type= "button" class="button-ui1" value= "판매자신청" onclick="location.href='/seller'">
+            </div>
+            <%
+              }
+            %>
+      </div>
+      <div class="fb-comments" data-href="http://localhost:3000/myInfo" data-width="500" data-numposts="3"></div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+      <script src= "./js/myInfo.js"></script>
+  </body>
+</html>

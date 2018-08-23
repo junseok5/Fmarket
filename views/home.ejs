@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fmarket</title>
+    <link rel="shortcut icon" type="image⁄x-icon" href="./img/title-logo.png">
+    <link rel= "stylesheet" type= "text/css" href= "./css/home.css" />
+    <link rel= "stylesheet" type= "text/css" href= "./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <script src= "./js/facebook-plugins.js"></script>
+    <script>
+      var id = '<%= authId %>';
+      console.log(id);
+    </script>
+    <div class= "wrapper">
+        <div id="loading"></div>
+        <!-- 헤더 시작 -->
+        <%
+        if (id) {
+        %>
+          <% include ./include/header(login).ejs %>
+        <%
+        } else {
+        %>
+          <% include ./include/header.ejs %>
+        <%
+        }
+        %>
+        <!-- 컨텐츠 시작 -->
+        <div class= "content">
+            <!-- 카테고리 -->
+            <% include ./include/category.ejs %>
+
+            <!-- 게시글 목록 나열 -->
+            <% include ./include/posts.ejs %>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src= "./js/home.js"></script>
+  </body>
+</html>

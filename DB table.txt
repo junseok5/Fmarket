@@ -1,0 +1,46 @@
+create table userInfo (
+ num int not null auto_increment primary key,
+ authId varchar(30) not null,
+ displayName varchar(30) not null,
+ gender varchar(10),
+ profileUrl varchar(100) not null,
+ email varchar(50) not null,
+ photos varchar(200) not null,
+ date datetime not null
+);
+
+create table sellerInfo (
+ num int not null auto_increment primary key,
+ authId varchar(30) not null,
+ company varchar(50) not null,
+ companySite varchar(100),
+ facebookSite varchar(100),
+ manager varchar(30) not null,
+ managerPhoneNum varchar(30) not null,
+ date datetime not null
+);
+
+create table posts (
+ num int not null auto_increment primary key,
+ authId varchar(30) not null,
+ title varchar(100) not null,
+ postUrl varchar(200) not null,
+ category varchar(30) not null,
+ subCategory varchar(30)
+ date datetime not null
+);
+
+create table interestPosts (
+ num int not null auto_increment primary key,
+ authId varchar(30) not null,
+ postUrl varchar(200) not null,
+ date datetime not null
+);
+
+
+
+select postUrl,date from posts Limit 10;
+
+select * from posts where date < '2017-06-20 00:47:23' order by date desc Limit 10;
+
+select postUrl,date from posts where title regexp 'test' and date < '2017-06-20 00:48:47' order by date desc Limit 5;

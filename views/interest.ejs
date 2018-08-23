@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TP2</title>
+    <link rel= "stylesheet" type= "text/css" href= "./css/home.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- 나중에 include를 통하여 중복 코드 제거 예정 -->
+    <!-- 헤더 시작 -->
+    <% include ./include/header.ejs %>
+
+    <div class= "content">
+        <!-- 카테고리 -->
+        <div class= "category">
+            <h2>카테고리</h2>
+            <ul>
+              <li class= "superlist" onclick="menuDropdown(1)">
+                menu1
+                <ul class= "sublist s1">
+                  <li>submenu1</li>
+                  <li>submenu2</li>
+                </ul>
+              </li>
+              <li class= "superlist" onclick="menuDropdown(2)">
+                menu2
+                <ul class= "sublist s2">
+
+                  <li>submenu1</li>
+                  <li>submenu2</li>
+                </ul>
+              </li>
+              <li class= "superlist" onclick="menuDropdown(3)">
+                menu3
+                <ul class= "sublist s3">
+                  <li>submenu1</li>
+                  <li>submenu2</li>
+                </ul>
+              </li>
+              <li class= "superlist" onclick="menuDropdown(4)">
+                menu4
+                <ul class= "sublist s4">
+                  <li>submenu1</li>
+                  <li>submenu2</li>
+                </ul>
+              </li>
+              <li class= "superlist" onclick="menuDropdown(5)">
+                menu5
+                <ul class= "sublist s5">
+                  <li>submenu1</li>
+                  <li>submenu2</li>
+                </ul>
+              </li>
+              <li class= "superlist" onclick="menuDropdown(6)">
+                menu6
+                <ul class= "sublist s6">
+                  <li>submenu1</li>
+                  <li>submenu2</li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+        <!-- 게시글 목록 나열 -->
+        <div class= "posts">
+            <h2>관심 상품 게시글 목록</h2>
+            <!--
+            <img src= "./img/sample_post.png" draggable="false">
+            <img src= "./img/sample_post2.png" draggable="false">
+          -->
+        </div>
+    </div>
+    <script src= "./js/home.js"></script>
+  </body>
+</html>

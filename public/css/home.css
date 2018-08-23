@@ -1,0 +1,530 @@
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(233, 235, 238);
+}
+
+/* header 시작 */
+
+header {
+  background-color: #3B5998;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.logo {
+  float: left;
+  position: relative;
+}
+
+#searchDiv {
+  padding-top: 25px;
+}
+
+.itemsOfInterest {
+  float: left;
+  position: relative;
+  margin: 25px 10px 0 0;
+}
+
+.myInfo {
+  float: left;
+  position: relative;
+  margin: 25px 0 0 0;
+}
+
+#headerMenu {
+  padding-top: 22px;
+}
+
+#hamburger-icon {
+  display: none;
+}
+
+/* header 끝 */
+
+/* content 시작 */
+.content {
+  background-color: rgb(233, 235, 238);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+}
+
+.content2 {
+  background-color: rgb(233, 235, 238);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+}
+
+.category {
+  background-color: rgb(233, 235, 238);
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  left: 50%;
+  margin: 0 0 0 -700px;
+  padding-top: 20px;
+  border-radius: 4px;
+  z-index: 20;
+}
+
+.category ul {
+  list-style: none;
+}
+
+.space {
+  height: 20px;
+}
+
+.sub-content {
+  background-color: rgb(233, 235, 238);
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.posts {
+  background-color: rgb(233, 235, 238);
+  position: inherit;
+  left: 50%;
+  width: 800px;
+  margin: 0 0 0 -400px;
+  padding-left: 25px;
+  border-radius: 4px;
+}
+
+.sellerInfo {
+  position: absolute;
+  width: 300px;
+  left: 50%;
+  margin: 0 0 0 -150px;
+}
+
+.sellerInfo input {
+  width: 240px;
+  padding: 5px 15px;
+  margin: 5px 0 5px 0;
+}
+
+.span-ui1 {
+  color: #6798FD;
+}
+
+#sellerAlert {
+  display: none;
+  width: 240px;
+}
+
+/** button 만들기 사이트 (http://www.cssbuttongenerator.com/) **/
+.button-ui1 {
+  -moz-box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #4197ee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#4197ee');
+	background-color:#79bbff;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0px;
+	border:1px solid #469df5;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	font-style:normal;
+	height: 40px;
+	line-height:30px;
+	width:240px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #287ace;
+}
+
+.button-ui1:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+	background-color:#4197ee;
+}
+
+.button-ui1:active {
+  position:relative;
+	top:1px;
+}
+
+/** 버튼 만들기 사이트 끝 **/
+
+.userInfo {
+  position: absolute;
+  width: 400px;
+  top: 70px;
+  left: 50%;
+  margin: 20px 0 0 -400px;
+  /*padding: 0 15px 15px 60px;*/
+  padding: 15px 20px 15px 20px;
+  border: 2px solid #fff;
+}
+
+.fb-comments {
+  left: 50%;
+  margin: 120px 0 0 50px;
+}
+
+#sellerInfo {
+  padding-top: 15px;
+}
+
+.uploadPost input {
+  width: 240px;
+  padding: 5px 15px;
+  margin: 5px 0 5px 0;
+}
+
+#showSubCategory {
+  display: none;
+}
+
+/*** 외부 소스 사용 (https://codepen.io/Creaticode/pen/ecAmo) ***/
+
+h1 {
+ 	color: #FFF;
+ 	font-size: 24px;
+ 	font-weight: 400;
+ 	text-align: center;
+ 	margin-top: 80px;
+ }
+
+ #x-icon {
+   display: none;
+ }
+
+.category h1 a {
+ 	color: #c12c42;
+ 	font-size: 16px;
+ }
+
+ .accordion {
+ 	width: 100%;
+ 	max-width: 360px;
+ 	margin: 30px auto 20px;
+  padding-left: 0;
+ 	background: #FFF;
+ 	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	border-radius: 4px;
+ }
+
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	padding: 15px 15px 15px 42px;
+	color: #4D4D4D;
+	font-size: 14px;
+	font-weight: 700;
+	border-bottom: 1px solid #CCC;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+	border-bottom: 0;
+}
+
+.accordion li.open .link {
+	color: #b63b4d;
+}
+
+.accordion li.default .submenu {display: block;}
+/**
+ * Submenu
+ -----------------------------*/
+ .submenu {
+ 	display: none;
+  padding-left: 0;
+ 	background: #444359;
+ 	font-size: 14px;
+ }
+
+ .submenu li {
+ 	border-bottom: 1px solid #4b4a5e;
+ }
+
+ .submenu a {
+ 	display: block;
+ 	text-decoration: none;
+ 	color: #d9d9d9;
+ 	padding: 12px;
+ 	padding-left: 42px;
+ 	-webkit-transition: all 0.25s ease;
+ 	-o-transition: all 0.25s ease;
+ 	transition: all 0.25s ease;
+ }
+
+ .submenu a:hover {
+ 	background: #b63b4d;
+ 	color: #FFF;
+ }
+ /*** 외부 소스 끝 ***/
+
+ #addItem {
+   cursor: pointer;
+ }
+
+ .label-primary {
+   cursor: pointer;
+ }
+
+/* content 끝 */
+
+#icon-interest {
+  width: 40px;
+  height: 40px;
+}
+
+/* 외부 소스 사용 */
+#loading {
+  position: fixed;
+  display: none;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  border: 3px solid rgba(255,255,255,.9);
+  border-radius: 50%;
+  border-top-color: #5D5D5D;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+  z-index: 100;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 1430px) {
+
+  /* content */
+  .category {
+    background-color: #212121;
+    position: fixed;
+    width: 400px;
+    left: -400px;
+    top: 0;
+    margin: 0;
+    padding: 0px;
+    z-index: 20;
+    transition: 0.5s;
+  }
+  .category h1 {
+    color: #fff;
+  }
+
+  #x-icon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    color: #fff;
+    font-size: 34px;
+    top: 0;
+    right: 0;
+    padding: 5px 5px;
+  }
+
+  #hamburger-icon {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 34px;
+    margin-right: 7px;
+  }
+
+  #plugin-like {
+    display: none;
+  }
+
+  .posts {
+    width: 360px;
+    margin: 0 0 0 -200px;
+  }
+
+  .userInfo {
+    margin: 45px 0 0 -420px;
+  }
+
+  .fb-comments {
+    margin: 120px 0 0 0px;
+  }
+
+  .sellerInfo {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* header */
+  .logo img {
+    width: 200px;
+  }
+
+  iframe {
+    width: 400px;
+  }
+
+  #searchDiv {
+    padding-top: 13px;
+  }
+
+  #loginButton {
+    height: 35px;
+    margin-bottom: 3px;
+  }
+
+  /* content */
+  .category {
+    background-color: #212121;
+    position: fixed;
+    width: 400px;
+    left: -400px;
+    top: 0;
+    margin: 0;
+    padding: 0px;
+    z-index: 20;
+    transition: 0.5s;
+  }
+  .category h1 {
+    color: #fff;
+  }
+
+  #x-icon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    color: #fff;
+    font-size: 34px;
+    top: 0;
+    right: 0;
+    padding: 5px 5px;
+  }
+
+  #hamburger-icon {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 34px;
+    margin-right: 7px;
+  }
+
+  #plugin-like {
+    display: none;
+  }
+
+  .posts {
+    width: 450px;
+    margin: 0 0 0 -225px;
+  }
+
+  .userInfo {
+    margin: 45px 0 0 -200px;
+  }
+
+  .fb-comments iframe {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* header */
+  .logo img {
+    width: 150px;
+  }
+
+  #searchDiv {
+    padding-top: 6px;
+  }
+
+  iframe {
+    width: 335px;
+  }
+
+  /* content */
+  .category {
+    background-color: #212121;
+    position: fixed;
+    width: 240px;
+    left: -240px;
+    top: 0;
+    margin: 0;
+    padding: 0 10px;
+    z-index: 20;
+    transition: 0.5s;
+  }
+  .category h1 {
+    color: #fff;
+  }
+
+  #x-icon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    color: #fff;
+    font-size: 34px;
+    top: 0;
+    right: 0;
+    padding: 5px 5px;
+  }
+
+  #hamburger-icon {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 34px;
+    margin-right: 7px;
+  }
+
+  #plugin-like {
+    display: none;
+  }
+
+  .posts {
+    width: 360px;
+    margin: 0 0 0 -195px;
+  }
+
+  .userInfo {
+    width: 360px;
+    margin: 20px 0 0 -180px;
+  }
+
+  .fb-comments iframe {
+    display: none;
+  }
+}

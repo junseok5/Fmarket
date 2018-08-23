@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fmarket</title>
+    <link rel="shortcut icon" type="image⁄x-icon" href="./img/title-logo.png">
+    <link rel= "stylesheet" type= "text/css" href= "./css/home.css" />
+    <link rel= "stylesheet" type= "text/css" href= "./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+      <!-- 나중에 include를 통하여 중복 코드 제거 예정 -->
+      <div class="wrapper">
+        <!-- 헤더 시작 -->
+          <% include ./include/header(login).ejs %>
+
+          <!-- 판매자 신청 페이지 -->
+          <div class="content2">
+              <div class= "sellerInfo">
+                <h3>판매자 등록</h3>
+                <form id="sellerForm" action="seller-regist" method="post">
+                    <input type= "text" name= "companyName" placeholder="판매 회사 이름"></br>
+                    <input type= "text" name= "companyUrl" placeholder="회사 사이트 주소"></br>
+                    <input type= "text" name= "facebookUrl" placeholder="페이스북 페이지 주소"></br>
+                    <input type= "text" name= "managerName" placeholder="담당자 이름"></br>
+                    <input type= "text" name= "managerPhoneNum" placeholder="담당자 전화번호 (010-xxxx-xxxx)"></br>
+                    <!--경고 알림 창 bootstrap 이용 -->
+                    <div id="sellerAlert" class="alert alert-warning" role="alert"></div>
+                    <input type= "button" class="button-ui1" id="sellerUpload" value= "등록하기">
+                </form>
+              </div>
+
+          </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+      <script src="./js/seller.js"></script>
+  </body>
+</html>

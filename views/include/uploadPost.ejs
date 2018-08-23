@@ -1,0 +1,39 @@
+<!-- <div class= "uploadPost">
+    <form id="postForm" action= "/upload" method= "POST">
+        <h3>상품 업로드</h3>
+        <input type= "text" name= "title" placeholder="Title"><br />
+        <input type= "url" name= "postUrl" placeholder="Post Url (http://facebook.com/...)"><br />
+        <input list="category" name= "category" placeholder="category" oninput="showSubCategory()">
+        <datalist id= "category">
+            <option value= "OUTER">OUTER</option>
+            <option value= "TOP">TOP</option>
+            <option value= "SHIRTS">SHIRTS</option>
+            <option value= "PANTS">PANTS</option>
+        </datalist><br />
+        <div id="showSubCategory"></div>
+        <div id="sellerAlert" class="alert alert-warning" role="alert"></div>
+        <input type= "button" class="button-ui1" id= "postSubmit" value= "업로드">
+    </form>
+</div> -->
+<div class= "uploadPost">
+<div class="panel panel-primary">
+  <div class="panel-heading"><h4>상품 업로드</h4></div>
+  <div class="panel-body">
+    <form id="postForm" action= "/upload" method= "POST">
+      <input type= "text" name= "title" placeholder="Title"><br />
+      <input type= "url" name= "postUrl" placeholder="Post Url (http://facebook.com/...)"><br />
+      <input list="category" name= "category" placeholder="category" oninput="showSubCategory()">
+      <datalist id= "category">
+          <option value= "BEST">BEST</option>
+          <option value= "OUTER">OUTER</option>
+          <option value= "TOP">TOP</option>
+          <option value= "SHIRTS">SHIRTS</option>
+          <option value= "PANTS">PANTS</option>
+      </datalist><br />
+      <div id="showSubCategory"></div>
+      <div id="sellerAlert" class="alert alert-warning" role="alert"></div>
+      <input type= "button" class="button-ui1" id= "postSubmit" value= "업로드">
+    </form>
+  </div>
+</div>
+</div>

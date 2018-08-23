@@ -1,0 +1,28 @@
+<header>
+  <div class="col-lg-2"></div>
+  <div class="col-lg-4">
+    <div class= "logo">
+        <a href= "./"><img src="./img/fmarket-logo.png" draggable="false"></a>
+    </div>
+        <div class="input-group" id="searchDiv">
+          <input type="text" class="form-control" name="searchKeywords" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" id= "searchPosts" type="button">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+          </span>
+        </div><!-- /input-group -->
+  </div><!-- /.col-lg-5 -->
+  <ul id="headerMenu" class="nav nav-pills" role="tablist">
+    <li>
+      <span id="hamburger-icon" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" onclick="openNav()"></span>
+    </li>
+    <li>
+      <button id="loginButton" class="btn btn-default" onclick="location.href='/auth/facebook'">
+        <i class="fa fa-facebook-square" style="font-size:24px; color:#3B5998;">
+          Login
+        </i>
+      </button>
+    </li>
+  </ul>
+</header>

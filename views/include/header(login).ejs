@@ -1,0 +1,41 @@
+<header>
+    <!-- bootrap -->
+    <div class="col-lg-2"></div>
+    <div class="col-lg-4">
+      <div class= "logo">
+          <a href= "/"><img src="./img/fmarket-logo.png" draggable="false"></a>
+      </div>
+      <div class="input-group" id="searchDiv">
+          <input type="text" class="form-control" name="searchKeywords" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" id= "searchPosts" type="button">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+          </span>
+      </div><!-- /input-group -->
+    </div><!-- /.col-lg-5 -->
+    <div class="col-lg-3">
+      <ul id="headerMenu" class="nav nav-pills" role="tablist">
+        <li>
+            <span id="hamburger-icon" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" onclick="openNav()"></span>
+        </li>
+        <li role="presentation" id="mainMenu" class="active">
+          <a href="javascript:void(0)" id="showMainItems">
+            <span id="mainIcon" class="glyphicon glyphicon-list-alt" aria-hidden="true">메인</span>
+            <span id="mainBadge" class="badge"></span>
+          </a>
+        </li>
+        <li role="presentation" id="likeMenu">
+          <a href="javascript:void(0)" id="showLikeItems">
+            <span id="likeIcon" class="glyphicon glyphicon-ok" aria-hidden="true">관심상품</span><span id="likeBadge" class="badge"></span>
+          </a>
+        </li>
+        <li role="presentation" id="myInfoMenu">
+          <a href="myInfo">
+            <span id="myInfoIcon" class="glyphicon glyphicon-user" aria-hidden="true">내정보</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+</header>
